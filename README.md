@@ -3,6 +3,6 @@ Tres alumnos que cursan DAW2 en el Centre d'Estudis Joan XXII han realizado este
 
 AUTORES:
 
-Daniel Soriano --> CV: https://danisoriano.github.io/
+Daniel Soriano --> CV: https://danisoriano.github.io/ <br>
 Kyrenia Muñoz --> CV: https://kyreeniaa0403.github.io/
 Ernest Azanza --> CV: https://ernest101995.github.io/
