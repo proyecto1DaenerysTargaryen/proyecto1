@@ -1,0 +1,35 @@
+create table tbl_usuario (
+	id_usuario int (11) AUTO_INCREMENT PRIMARY KEY,
+	nombre char(30),
+	apellido char(30),
+	dni char(9),
+	nick char(30)
+)
+create table tbl_tipus_recurso (
+	id_tipus_recurso int(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre_tipus_recurso char(30)
+)
+create table tbl_recurso (
+	id_recurso int(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre_recurso char(30),
+	id_reserva int,
+	cantidad int(3),
+	id_tipus_recurso int,
+	disponible int(3),
+	FOREIGN KEY (id_tipus_recurso) REFERENCES tbl_tipus_recurso(id_tipus_recurso)
+)
+
+create table tbl_reserva (
+	id_reserva int(11) AUTO_INCREMENT PRIMARY KEY,
+	f_ini time(),
+	f_devol time(),
+	h_ini datetime(),
+	h_devol datetime(),
+	id_recurso int,
+	id_usuario int,
+	disponible int(3),
+	FOREIGN KEY (id_recurso) REFERENCES tbl_recurso(id_recurso),
+	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario)
+
+)
+
