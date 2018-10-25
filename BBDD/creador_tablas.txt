@@ -3,7 +3,8 @@ create table tbl_usuario (
 	nombre char(30),
 	apellido char(30),
 	dni char(9),
-	nick char(30)
+	nick char(30),
+	contra char(30)
 )
 create table tbl_tipus_recurso (
 	id_tipus_recurso int(11) AUTO_INCREMENT PRIMARY KEY,
@@ -30,6 +31,24 @@ create table tbl_reserva (
 	disponible int(3),
 	FOREIGN KEY (id_recurso) REFERENCES tbl_recurso(id_recurso),
 	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario)
-
 )
-
+create table tbl_tipus_usuario (
+	id_tipus_usuario int(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre_tipus_usuario char(30)
+)
+create table tbl_tipus_incidencia (
+	id_tipus_incidencia int(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre_tipus_incidencias char(30)
+)
+create table tbl_incidencia (
+	id_incidencia int(11) AUTO_INCREMENT PRIMARY KEY,
+	id_reserva int,
+	id_tipus_incidencia int,
+	descripcion char(255),
+	FOREIGN KEY (id_reserva) REFERENCES tbl_reserva(id_reserva),
+	FOREIGN KEY (id_tipus_incidencia) REFERENCES tbl_tipus_incidencia (id_tipus_incidencia)
+<<<<<<< HEAD:planificacion/creador_tablas.txt
+)
+=======
+)
+>>>>>>> a4e9464ed2336973a906efd5ec4c3c8f8b06ac1c:creador_tablas.txt
