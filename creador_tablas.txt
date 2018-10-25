@@ -31,6 +31,20 @@ create table tbl_reserva (
 	disponible int(3),
 	FOREIGN KEY (id_recurso) REFERENCES tbl_recurso(id_recurso),
 	FOREIGN KEY (id_usuario) REFERENCES tbl_usuario(id_usuario)
-
 )
-
+create table tbl_tipus_usuario (
+	id_tipus_usuario int(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre_tipus_usuario char(30)
+)
+create table tbl_tipus_incidencia (
+	id_tipus_incidencia int(11) AUTO_INCREMENT PRIMARY KEY,
+	nombre_tipus_incidencias char(30)
+)
+create table tbl_incidencia (
+	id_incidencia int(11) AUTO_INCREMENT PRIMARY KEY,
+	id_reserva int,
+	id_tipus_incidencia int,
+	descripcion char(255),
+	FOREIGN KEY (id_reserva) REFERENCES tbl_reserva(id_reserva),
+	FOREIGN KEY (id_tipus_incidencia) REFERENCES tbl_tipus_incidencia (id_tipus_incidencia)
+)
