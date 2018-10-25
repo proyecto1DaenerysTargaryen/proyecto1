@@ -3,7 +3,8 @@ create table tbl_usuario (
 	nombre char(30),
 	apellido char(30),
 	dni char(9),
-	nick char(30)
+	nick char(30),
+	contra char(30)
 )
 create table tbl_tipus_recurso (
 	id_tipus_recurso int(11) AUTO_INCREMENT PRIMARY KEY,
