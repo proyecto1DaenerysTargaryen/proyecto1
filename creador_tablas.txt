@@ -47,4 +47,8 @@ create table tbl_incidencia (
 	descripcion char(255),
 	FOREIGN KEY (id_reserva) REFERENCES tbl_reserva(id_reserva),
 	FOREIGN KEY (id_tipus_incidencia) REFERENCES tbl_tipus_incidencia (id_tipus_incidencia)
+<<<<<<< HEAD:planificacion/creador_tablas.txt
 )
+=======
+)
+>>>>>>> a4e9464ed2336973a906efd5ec4c3c8f8b06ac1c:creador_tablas.txt
