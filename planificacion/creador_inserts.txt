@@ -1,0 +1,2 @@
+insert into tbl_tipus_recurso (id_tipus_recurso, nombre_tipus_recurso)
+VALUES(1,"Sala"),(2,"Aparell")
