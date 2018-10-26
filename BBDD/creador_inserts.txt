@@ -1,2 +1,45 @@
-insert into tbl_tipus_recurso (id_tipus_recurso, nombre_tipus_recurso)
-VALUES(1,"Sala"),(2,"Aparell")
+insert into tbl_tipus_recurso (id_tipus_recurso,nombre_tipus_recurso)
+VALUES(1,"Sala"),
+(2,"Dispositivo")
+
+insert into tbl_recurso (id_recurso,nombre_recurso,cantidad,id_tipus_recurso,disponible)
+VALUES(1,"Sala multidisciplinaria",4,1,4),
+(2,"Sala de informàtica",2,1,2),
+(3,"Taller de cocina",1,1,1),
+(4,"Despacho para entrevistas",2,1,2),
+(5,"Salón de actos",1,1,1),
+(6,"Sala de reuniones",1,1,1),
+(7,"Proyector",2,2,2),
+(8,"Ordenador portátil",3,2,3),
+(9,"Teléfono móvil",2,2,2)
+
+insert into tbl_usuario (id_usuario,nombre,apellido,dni,nick)
+VALUES (1,"Ernest", "Azanza", "47192064Z","eazanza"),
+(2,"Daniel","Soriano", "47293043V", "soriano69"),
+(3,"Kyrenia", "Muñoz", "47856523C","lakyree"),
+(4,"Joel", "Moreno", "47582204S","joelito19"),
+(5,"Marc","Hernandez","47885206B", "marcotaku"),
+(6,"Adrià","Soto", "47882311N", "sotodelreal"),
+(7,"David","Sanchez","47520036V", "dsanchez"),
+(8,"Daenerys","Targaryen","47956422D","dtargaryen"),
+(9,"Jon","Snow","47775620P","jsnow"),
+(10,"Cersei","Lannister","47005469R","clannister"),
+(11,"Tyrion","Lannister","47552141B","tlannister)",
+(12,"Arya","Stark","48996502L","astark"),
+(13,"Khal","Drogo","45659802K","kdrogo"),
+(14,"Joffrey","Baratheon","46969920J","jbaratheon"),
+(15,"Jaime","Lannister","44657820L","jlannister"),
+(16,"Caminante","Blanco","00000000A","cblanco"),
+(17,"Carrero","Blanco","39562247C","neilamstrong"),
+(18,"Mariano","Rajoy","46520014M","mrajoy"),
+(19, "Felipe","IV","00000001A","valtonyc"),
+(20, "Carles","Puigdemont","00001714C","krls"),
+(0, "administrador","total","11111111A","admin")
+
+//añadir campo
+alter table tbl_usuario
+add column contra char(30)
+
+//creación de contraseñas
+//$contra=[valor];
+//$md5=md5($contra);
