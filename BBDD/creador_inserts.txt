@@ -43,3 +43,14 @@ add column contra char(30)
 //creación de contraseñas
 //$contra=[valor];
 //$md5=md5($contra);
+
+insert into tbl_reserva(id_reserva,id_recurso, id_usuario, f_inici,f_devol, h_ini,h_devol)
+VALUES(1,1,2,"2018/10/29","2018/10/29","15:00:00","19:15:00"),
+(1,1,2,"2018/10/30","2018/11/01","15:00:00","19:15:00"),
+(1,1,2,"2018/10/22","2018/10/24","15:00:00","19:15:00"),
+(1,1,2,"2018/10/20","2018/10/25","15:00:00","19:15:00"),
+(1,1,2,"2018/10/28","2018/10/28","15:00:00","19:15:00")
+
+insert into tbl_reserva(id_reserva,id_recurso, id_usuario, f_inici,f_devol, h_ini,h_devol)
+VALUES(6,1,2,"2018/11/02","","16:15:00",""),
+(7,1,2,"2018/11/02","","16:15:00","")
