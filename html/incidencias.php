@@ -1,15 +1,14 @@
 <?php
   include "head.php";
-  include "footer.php";
 ?>
 
-      <div class="header-reserva">
+      <div class="header-incidencia">
         <div class="nombre-usu">
           <p>Bienvenido/a &nbsp;&nbsp; Kyrenia Muñoz |&nbsp; <a style="color: white;" href="index.php">Salir<a/></p>
         </div>
         <div class="titulo-header text-center">
-            <p style="font-size:50px;"><strong>RESERVAS</strong></p>
-            <p style="font-size:30px;">¿Qué tengo reservado?</p>
+            <p style="font-size:50px;"><strong>INCIDECIAS</strong></p>
+            <p style="font-size:30px;">¿Algo no funciona?</p>
         </div>
       </div>
 
