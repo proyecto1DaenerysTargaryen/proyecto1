@@ -4,6 +4,34 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  text-decoration: none!important;
+}
+
+/* ---------LOGIN--------- */
+.background-login {
+    height: 100%;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+    background: url(../img/login.png) center;
+    background-size: cover;
+}
+
+.login {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dedede;
+    width: 180%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 
 /* ---------HEADER--------- */
 .header-recurso {
@@ -24,6 +52,15 @@ body {
     background-size: cover;
 }
 
+.header-incidencia {
+    height: 580px;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+    background: url(../img/incidencia.png) center;
+    background-size: cover;
+}
+
 .header img {
     background: center center cover no-repeat fixed;
     width: 100%;
@@ -38,6 +75,7 @@ body {
     padding-top: 11%;
     padding-bottom: 11%;
     text-align: center;
+    text-decoration: none;
 }
 
 .nombre-usu {
@@ -89,6 +127,8 @@ body {
     text-decoration:none;
 }
 
+
+/* ------------------------------- */
 .sep {
     background-color: #d2d2d2;
     padding-top: 765px;
@@ -110,23 +150,76 @@ body {
 
 /* ---------BODY--------- */
 .cuerpo {
+  font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100%;
 }
 
+.consultas-recursos {
+  margin-top: 70px;
+}
+/* ---------FILTRO--------- */
 .filtro {
+  font-family: 'Montserrat', sans-serif;
     width: 90%;
-    height: 65px;
+    height: 55px;
+    border-radius: 4px;
     margin-left: 55px;
     margin-top: 60px;
-    position: absolute;
     background-color: #221821;
+}
+
+.letrafiltro {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 2.5%;
+    color: white;
+    float: left;
+}
+
+.options2 {
+    margin-top: 1.5%;
+    margin-left: 1.6%;
+    float: left;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    float: left;
+    color: black;
+
+}
+
+.tipo {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: white;
+    margin-left: 3%;
+    margin-top: 2.6%;
+    float: left;
+}
+
+.estado {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: white;
+    margin-left: -5%;
+    margin-top: 2%;
+    float: left;
+}
+
+.filtra {
+    float: left;
+    margin-top: 2%;
+    margin-left: 8%;
 }
 
 /* ---------FOOTER--------- */
 .footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
     background-color: #221821;
-    height: 300px;
+    color: white;
+    height: 200px;
     width: 100%;
     text-align: center;
     position: absolute;
