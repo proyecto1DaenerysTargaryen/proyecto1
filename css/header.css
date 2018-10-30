@@ -8,6 +8,7 @@ a {
   text-decoration: none!important;
 }
 
+
 /* ---------LOGIN--------- */
 .background-login {
     height: 100%;
@@ -30,6 +31,9 @@ a {
     width: 180%;
     padding-top: 40px;
     padding-bottom: 40px;
+    /* -webkit-box-shadow: 10px 10px 10px -2px rgba(196,196,196,0.52);
+    -moz-box-shadow: 10px 10px 10px -2px rgba(196,196,196,0.52);
+    box-shadow: 10px 10px 10px -2px rgba(196,196,196,0.52); */
 }
 
 
@@ -148,6 +152,7 @@ a {
     border-bottom: 35px solid white;
 }
 
+
 /* ---------BODY--------- */
 .cuerpo {
   font-family: 'Montserrat', sans-serif;
@@ -155,6 +160,7 @@ a {
     height: 100%;
 }
 
+/* ---------RECURSOS--------- */
 .consultas-recursos {
     margin-top: 10px;
 }
@@ -168,6 +174,48 @@ a {
 
 .boton {
     margin-top: 320px;
+}
+/*--------HOVER------------*/
+.transparencia {
+    background-color: black;
+    opacity: 0.6;
+    height:290px;
+    width: 387px;
+    position: absolute;
+}
+
+.transparencia:hover {
+    background-color: #221821;
+}
+
+.txt-img {
+  color: white;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 27px;
+}
+
+/* ---------RESERVAS--------- */
+
+.tbl-imagen {
+    /* border:1px solid black; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 55px!important;
+}
+
+.tbl-txt {
+    /* border:1px solid black; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px!important;
+}
+
+.txt-img-reserva {
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 17px;
 }
 
 
@@ -226,6 +274,7 @@ a {
     margin-left: 10%;
 }
 
+
 /* ---------FOOTER--------- */
 .footer {
   font-family: 'Montserrat', sans-serif;
@@ -239,3 +288,6 @@ a {
     color: white;
     text-align: center;
 }
+
+
+/*----------------------------------------------------*/

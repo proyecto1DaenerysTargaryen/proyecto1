@@ -34,29 +34,44 @@
     <div class="cuerpo">
       <div class="filtro">
         <form action="script.php" method="post">
-          <p class="letrafiltro">Búsqueda<div class="tipo">Tipo:</div></p>
-          <div class="options2">
-            <select name="programa">
-            <option value="0" selected="selected">--Seleccionar--</option>
-            <option value="1">Sala</option>
-            <option value="2">Dispositivo</option>
-   </select>
-          </div>
-          <p class="letrafiltro"><div class="estado">Estado: </div></p>
-          <div class="options2">
+            <p class="letrafiltro">Búsqueda<div class="tipo">Tipo:</div></p>
+            <div class="options2">
               <select name="programa">
-            <option value="Selecionar" selected="selected">--Seleccionar--</option>
-            <option value="Sala">Disponible</option>
-            <option value="Dispositivo">Reservado</option>
-          </div>
-          <div class="options2">
-          </div>
+                  <option value="0" selected="selected">--Seleccionar--</option>
+                  <option value="1">Sala</option>
+                  <option value="2">Dispositivo</option>
+              </select>
+            </div>
+            <p class="letrafiltro"><div class="estado">Estado: </div></p>
+            <div class="options2">
+              <select name="programa">
+                  <option value="Selecionar" selected="selected">--Seleccionar--</option>
+                  <option value="Sala">Disponible</option>
+                  <option value="Dispositivo">Reservado</option>
+            </div>
+            <div class="options2">
+            </div>
           <div class="filtra">
               <input type="submit" name="enviar" value="Filtra" style="margin-left: 272px; border: 2px black solid; width: 80px; height: 25px; z-index: -1">
           </div>
         </form>
-      </div>    </div>
+      </div>
 
-    <?php
-      include "footer.php";
-    ?>
+      <div class="consultas-recursos">
+      <div class="col-sm-12" style="border: 2px solid black;">
+
+                <div class="col-sm-4 tbl-imagen" style="background-color: inherit; border: 2px solid blue;">
+                </div>
+
+                <div class="col-sm-8 tbl-txt" style="background-color: inherit; border: 2px solid blue;">
+                  <p class="txt-img-reserva">
+                    <?php
+                      echo $row['nombre_recurso'];
+                    ?>
+                  </p>
+                </div>
+
+
+      </div>
+      </div>
+    </div>
