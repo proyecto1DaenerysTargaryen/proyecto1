@@ -65,28 +65,30 @@
             $qry_sql=mysqli_query($con, $sql);
             while($row=mysqli_fetch_array($qry_sql)){
           ?>
-                <div class="col-sm-4" style="background-color: inherit; border:1px solid black;">
+
+                <div class="col-sm-4 btn-imagen" style="background-color: inherit;">
                   <?php
-                    echo '<img height="200px" src="../BBDD/imagenes_recursos/'.$row['Imagen'].'">';
+                    echo '<img height="290px" src="../BBDD/imagenes_recursos/'.$row['Imagen'].'">';
                     if($row['disponible']==0){
                     ?>
                   <div class="boton" style="position: absolute;">
                     <!-- <div class="col-sm-6">
                       <button>Incidencia1</button>
                     </div> -->
-                    <div class="col-sm-6">
-                      <button><?php echo '<a href="reservar.proc.php?id='.$row['id_recurso'].'&r=1">';?>Reservar</a></button><!-- enlace a reservar.proc.php pasando una campo "id=1" tmb un debe tener un campo para el numero de registro del recurso-->
+                    <div class="col-sm-6 btn-reserva">
+                      <?php echo '<input class="btn btn-success" style="background-color: #9fdf9f; border:none;color:#221821;" value="Reservar" type="button" onclick=\'window.location.href="reservar.proc.php?id='.$row['id_recurso'].'&r=1"\'>';?><!-- enlace a reservar.proc.php pasando una campo "id=1" tmb un debe tener un campo para el numero de registro del recurso-->
                     </div>
                   </div>
                   <?php
                     }else{
                       ?>
                       <div class="boton" style="position: absolute;">
-                        <div class="col-sm-6">
-                          <button><?php echo '<a href="reservar.proc.php?id='.$row['id_recurso'].'&r=2">';?>Incidencia</a></button><!--  enlace a reservar.proc.php pasando una campo "id=3" tmb un debe tener un campo para el numero de registro del recurso -->
+                        <div class="col-sm-6 btn-incidencia">
+                        <?php echo '<input class="btn btn-danger" style="background-color:#ff6666;border:none;color:#221821;" value="Incidencia" type="button" onclick=\'window.location.href="./reservar.proc.php?id='.$row['id_recurso'].'&r=2"\'>';?><!--  enlace a reservar.proc.php pasando una campo "id=3" tmb un debe tener un campo para el numero de registro del recurso -->
                         </div>
-                        <div class="col-sm-6">
-                          <button><?php echo '<a href="reservar.proc.php?id='.$row['id_recurso'].'&r=3">';?>Devolver</a></button><!-- enlace a reservar.proc.php pasando una campo "id=2" tmb un debe tener un campo para el numero de registro del recurso-->
+                        <div class="col-sm-6 btn-devolver">
+                          <?php echo '<input class="btn btn-info" style="background-color: #d2d2d2; border:none; color:#221821;" value="Devolver" type="button" onclick=\'window.location.href="reservar.proc.php?id='.$row['id_recurso'].'&r=3"\'>';?>
+            <!-- enlace a reservar.proc.php pasando una campo "id=2" tmb un debe tener un campo para el numero de registro del recurso-->
                         </div>
                       </div>
                       <?php
@@ -98,7 +100,6 @@
           ?>
       </div>
     </div>
-
     </div>
 
     <?php

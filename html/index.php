@@ -4,7 +4,7 @@
 
 		<div class="background-login">
 
-			<div class="col-sm-4"></div>
+			<div class="col-sm-4" style="background-color: transparent;"></div>
 				<div class="col-sm-4" style="background-color: transparent;">
 					<div class="login">
 							<form action="login.php" method="get">
@@ -20,7 +20,7 @@
 							</form>
 					</div>
 				</div>
-				<div class="col-sm-4"></div>
+				<div class="col-sm-4" style="background-color: transparent;"></div>
 
 	</body>
 </html>
