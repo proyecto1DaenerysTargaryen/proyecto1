@@ -1,11 +1,11 @@
 <?php
   include "head.php";
-  include "footer.php";
+  //include "footer.php";
 ?>
 
       <div class="header-recurso">
         <div class="nombre-usu">
-          <p>Bienvenido/a &nbsp;&nbsp; Kyrenia Muñoz |&nbsp; <a style="color: white;" href="index.php">Salir<a/></p>
+          <p><?php session_start(); echo sexo(get_perfil($_SESSION['id_usuario']));?>&nbsp;&nbsp;<?php  echo get_nom_perfil(get_perfil($_SESSION['id_usuario'])); ?> |&nbsp; <a style="color: white;" href="index.php?s=1">Salir<a/></p>
         </div>
         <div class="titulo-header text-center">
             <p style="font-size:50px;"><strong>RECURSOS</strong></p>
