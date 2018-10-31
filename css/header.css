@@ -18,6 +18,14 @@ a {
     background-size: cover;
 }
 
+.background-incidencias {
+    height: 100%;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+    background: url(../img/formulario.png) center;
+    background-size: cover;
+
 .login {
     font-family: 'Montserrat', sans-serif;
     margin-top: 50%;
