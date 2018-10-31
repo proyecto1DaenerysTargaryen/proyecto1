@@ -1,0 +1,323 @@
+@charset "utf-8";
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+
+/* ---------LOGIN--------- */
+.background-login {
+    height: 100%;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+    background: url(../img/login.png) center;
+    background-size: cover;
+}
+
+.login {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dedede;
+    width: 180%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* -webkit-box-shadow: 10px 10px 10px -2px rgba(196,196,196,0.52);
+    -moz-box-shadow: 10px 10px 10px -2px rgba(196,196,196,0.52);
+    box-shadow: 10px 10px 10px -2px rgba(196,196,196,0.52); */
+}
+
+
+/* ---------HEADER--------- */
+.header-recurso {
+    height: 580px;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+    background: url(../img/recursos.png) center;
+    background-size: cover;
+}
+
+.header-reserva {
+    height: 580px;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+    background: url(../img/reserva.png) center;
+    background-size: cover;
+}
+
+.header-incidencia {
+    height: 580px;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+    background: url(../img/incidencia.png) center;
+    background-size: cover;
+}
+
+.header img {
+    background: center center cover no-repeat fixed;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+}
+
+.titulo-header {
+    background-color: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nombre-usu {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 13px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+
+/* ---------MENU--------- */
+.btn-menu {
+    background-color: #d2d2d2;
+    height: 210px;
+    width: 100%;
+    margin-top: 580px;
+    position: absolute;
+}
+
+.col-sm-4 {
+    width: 32.5%!important;
+    display: flex;
+    justify-content: center;
+    background-color: #d2d2d2;
+}
+
+.btn-1,.btn-2,.btn-3{
+    font-family: 'Montserrat', sans-serif;
+    width: 270px;
+    margin-top: 70px;
+    justify-content: center;
+    border: 2px solid #221821;
+    border-radius: 5px;
+    color: #221821;
+    background-color: #d2d2d2;
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+
+.btn-1:hover,.btn-2:hover,.btn-3:hover {
+    background-color: #221821;
+    color: white;
+    text-decoration:none;
+}
+
+.btn-1 a:hover,.btn-2 a:hover,.btn-3 a:hover{
+    color: white;
+    text-decoration:none;
+}
+
+
+/* ------------------------------- */
+.sep {
+    background-color: #d2d2d2;
+    padding-top: 765px;
+}
+
+.sep-de {
+    width: 50%;
+    height: 60px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid white;
+}
+
+.sep-iz {
+    width: 50%;
+    height: 60px;
+    border-left: 50px solid transparent;
+    border-bottom: 35px solid white;
+}
+
+
+/* ---------BODY--------- */
+.cuerpo {
+  font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    background-color: #221821;
+    color:white;
+}
+/* ---------RECURSOS--------- */
+.consultas-recursos {
+    margin-top: 20px;
+}
+
+.btn-imagen {
+    /* border:1px solid black; */
+    padding-top: 70px;
+    padding-bottom: 80px;
+    padding-left: 55px!important;
+}
+
+.boton {
+    margin-top: 320px;
+}
+/*--------HOVER------------*/
+.transparencia {
+    background-color: black;
+    opacity: 0.6;
+    height:290px;
+    width: 387px;
+    position: absolute;
+}
+
+.transparencia:hover {
+    background-color: #221821;
+}
+
+.txt-img {
+  color: white;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 27px;
+}
+
+/* ---------RESERVAS--------- */
+
+.tbl-imagen-reserva {
+    /* border:1px solid black; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px!important;
+
+}
+
+.tbl-txt {
+    /* border:1px solid black; */
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 55px!important;
+    width: 800px!important;
+}
+
+.nom-recurso {
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 25.5px;
+}
+
+.desc-recurso {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+}
+
+.fecha-recurso {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.separacion {
+  text-align: center;
+  color: #714b6d;
+}
+
+
+.descripcion-incidencia {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+/* ---------FILTRO--------- */
+.filtro {
+  font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    height: 55px;
+    border-radius: 4px;
+    margin-left: 65px;
+    margin-top: 80px;
+    background-color: #221821;
+}
+
+.letrafiltro {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    margin-left: 5%;
+    margin-top: 15px;
+    color: white;
+    float: left;
+}
+
+.options2 {
+    margin-top: 15px;
+    margin-left: 5%;
+    float: left;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    float: left;
+    color: black;
+
+}
+
+.tipo {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: white;
+    margin-left: 5%;
+    margin-top: 15px;
+    float: left;
+}
+
+.estado {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: white;
+    margin-left: 1%;
+    margin-top: 15px;
+    float: left;
+}
+
+.filtra {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10%;
+}
+
+
+/* ---------FOOTER--------- */
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+    background-color: #221821;
+    color: white;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    margin-top: 150%;
+    text-align: center;
+}
+
+
+/*----------------------------------------------------*/
