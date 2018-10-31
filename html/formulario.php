@@ -1,13 +1,6 @@
 <?php
   include "head.php";
 ?>
-<?php
-	if(isset($_REQUEST['s'])){
-		if($_REQUEST['s']==1){
-			logout();
-		}
-	}
-?>
 		<div class="background-incidencias">
 			<div class="col-sm-4" style="background-color: transparent;"></div>
 				<div class="col-sm-4" style="background-color: transparent;">
@@ -23,6 +16,12 @@
 									<input style="float: left; margin-top: 4%; margin-left: 1%" type="radio" name="tipus" value="2">
 									<input type="hidden" name="r" value="3">
 									<label id="label2" style="display: none"><b>El texto esta vacio</b></label>
+									<?php 
+										$idR=$_REQUEST['idR'];
+										$id=$_REQUEST['id'];
+									?>
+									<input type="hidden" value="<?php echo $idR;?>" name="idR">
+									<input type="hidden" value="<?php echo $id;?>" name="id">
 								</div>
 									<input class="btn btn-info btn-login" style="float: left; background-color: #221821; border: none; margin-top: 5%; margin-left: 30%;" value="Crear incidencia" type="submit" name="ok">
 							</form>

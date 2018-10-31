@@ -162,7 +162,7 @@ a {
 
 /* ---------RECURSOS--------- */
 .consultas-recursos {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .btn-imagen {
@@ -197,28 +197,55 @@ a {
 
 /* ---------RESERVAS--------- */
 
-.tbl-imagen {
+.tbl-imagen-reserva {
     /* border:1px solid black; */
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 55px!important;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px!important;
+
 }
 
 .tbl-txt {
     /* border:1px solid black; */
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     padding-left: 55px!important;
+    width: 800px!important;
 }
 
-.txt-img-reserva {
+.nom-recurso {
   color: black;
   text-align: center;
-  padding-top: 10px;
-  font-size: 17px;
+  padding-top: 20px;
+  font-size: 25.5px;
+}
+
+.desc-recurso {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+}
+
+.fecha-recurso {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.separacion {
+  text-align: center;
+  color: #714b6d;
 }
 
 
+.descripcion-incidencia {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+}
 /* ---------FILTRO--------- */
 .filtro {
   font-family: 'Montserrat', sans-serif;
@@ -232,7 +259,7 @@ a {
 
 .letrafiltro {
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 5%;
     margin-top: 15px;
     color: white;
@@ -252,7 +279,7 @@ a {
 
 .tipo {
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     margin-left: 5%;
     margin-top: 15px;
@@ -261,7 +288,7 @@ a {
 
 .estado {
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     margin-left: 1%;
     margin-top: 15px;
@@ -281,11 +308,10 @@ a {
   font-size: 20px;
     background-color: #221821;
     color: white;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    color: white;
+    height: 200px;
+    bottom: 0;
+    margin-top: 135%;
     text-align: center;
 }
 
